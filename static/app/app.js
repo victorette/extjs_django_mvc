@@ -4,7 +4,7 @@ Ext.application({
     name: 'ExtMVC',
     appFolder: 'static/app',
 
-    controllers: ['Contacts'],
+    controllers: ['Contacts', 'Menu'],
 
     autoCreateViewport: true,
 
