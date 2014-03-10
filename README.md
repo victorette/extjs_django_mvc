@@ -1,5 +1,7 @@
 # Intro
 [![Build Status](https://drone.io/github.com/victorette/extjs_django_mvc/status.png)](https://drone.io/github.com/victorette/extjs_django_mvc/latest)
+[![Build Status](https://travis-ci.org/victorette/extjs_django_mvc.png?branch=master)](https://travis-ci.org/victorette/extjs_django_mvc)
+[![Coverage Status](https://coveralls.io/repos/victorette/extjs_django_mvc/badge.png)](https://coveralls.io/r/victorette/extjs_django_mvc)
 
 The main goal of this project is to provide basic informations on how to use ExtJS and Django in the same application.
 
