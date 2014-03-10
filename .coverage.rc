@@ -1,7 +1,9 @@
 [run]
 source = src
 branch = True
-omit = static/*
+omit = 
+	static/*
+	src/extjs_django_mvc/wsgi.py
 
 [report]
 exclude_lines =

@@ -1,5 +1,4 @@
 # Intro
-[![Build Status](https://drone.io/github.com/victorette/extjs_django_mvc/status.png)](https://drone.io/github.com/victorette/extjs_django_mvc/latest)
 [![Build Status](https://travis-ci.org/victorette/extjs_django_mvc.png?branch=master)](https://travis-ci.org/victorette/extjs_django_mvc)
 [![Coverage Status](https://coveralls.io/repos/victorette/extjs_django_mvc/badge.png)](https://coveralls.io/r/victorette/extjs_django_mvc)
 
@@ -10,3 +9,7 @@ This project was created using Aptana Studio (http://www.aptana.com/), Django 1.
 # Install instructions
 
 To get started you must download ExtJS and extract it inside the static folder. The app expects a folder called "extjs".
+
+
+Example using drone.io:
+[![Build Status](https://drone.io/github.com/victorette/extjs_django_mvc/status.png)](https://drone.io/github.com/victorette/extjs_django_mvc/latest)

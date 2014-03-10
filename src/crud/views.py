@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-import django.utils.simplejson as json
+import json
 from utilsWeb import JsonError, JsonSuccess 
 from models import Contact
 

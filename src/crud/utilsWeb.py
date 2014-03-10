@@ -2,7 +2,7 @@ from datetime import datetime
 from django.conf import settings
 from django.http import HttpResponse 
 
-import django.utils.simplejson as json
+import json
 import os
 
 
@@ -50,34 +50,3 @@ def JSONserialise( obj ):
         except : obj = 'error JSONSerialise'
     return obj 
     
-
-def my_send_mail(subject, txt, sender, to=[], files=[], charset='UTF-8'):
-    from email import Encoders
-    from email.MIMEMultipart import MIMEMultipart
-    from email.MIMEBase import MIMEBase
-    from email.MIMEText import MIMEText
-    
-    for dest in to:
-        dest = dest.strip()
-        msg = MIMEMultipart('related')
-        msg['Subject'] = subject
-        msg['From'] = sender
-        msg['To'] =  dest
-        msg.preamble = 'This is a multi-part message in MIME format.'
-        msgAlternative = MIMEMultipart('alternative')
-        msg.attach(msgAlternative)
-        msgAlternative.attach(MIMEText(txt, _charset=charset))
-        msgAlternative.attach(MIMEText(txt, 'html', _charset=charset))
-        
-        for f in files:
-            part = MIMEBase('application', "octet-stream")
-            part.set_payload( open(f,"rb").read() )
-            Encoders.encode_base64(part)
-            part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(f))
-            msg.attach(part)
-        
-        from smtplib import SMTP
-        smtp = SMTP()
-        smtp.connect(host=settings.EMAIL_HOST)
-        smtp.sendmail(sender,dest, msg.as_string())
-        smtp.quit()
