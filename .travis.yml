@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.3"
+  - "2.7"
+  - "2.6"
+# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+install: pip install -r requirements.txt --use-mirrors
+# command to run tests, e.g. python setup.py test
+script:  coverage run --rcfile=.coverage.rc src/manage.py test --migrate
+after_success: coveralls --config_file=.coverage.rc --coveralls_yaml=.coveralls.yml
+
+fast_finish: true
