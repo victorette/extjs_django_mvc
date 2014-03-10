@@ -9,7 +9,3 @@ This project was created using Aptana Studio (http://www.aptana.com/), Django 1.
 # Install instructions
 
 To get started you must download ExtJS and extract it inside the static folder. The app expects a folder called "extjs".
-
-
-Example using drone.io:
-[![Build Status](https://drone.io/github.com/victorette/extjs_django_mvc/status.png)](https://drone.io/github.com/victorette/extjs_django_mvc/latest)
