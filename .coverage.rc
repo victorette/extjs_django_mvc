@@ -1,11 +1,7 @@
 [run]
-source =
-    src
+source = src
 branch = True
-omit =
-    src/tests/*
-    templates
-    static
+omit = static/*
 
 [report]
 exclude_lines =

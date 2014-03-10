@@ -10,6 +10,6 @@ install:
 script: 
   - coverage run --rcfile=.coverage.rc src/manage.py test crud
   - coverage report -m
-after_success: coveralls --config_file=.coverage.rc
+after_success: coveralls --rcfile=.coverage.rc
 
 fast_finish: true
