@@ -4,7 +4,7 @@
 
 The main goal of this project is to provide basic informations on how to use ExtJS and Django in the same application.
 
-This project was created using Aptana Studio (http://www.aptana.com/), Django 1.6 and ExtJS 4.2.1
+This project was created using [Aptana Studio](http://www.aptana.com/), [Django 1.6](https://www.djangoproject.com/) and [ExtJS 4.2.1](http://www.sencha.com/products/extjs/)
 
 # Install instructions
 
